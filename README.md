@@ -3,17 +3,21 @@ Use recurrent neural network (embeding layer + LSTM hidden layer + fully connect
 
 ## Summayr of the steps: 
 - Load data
+
 - Tokenize characters function:
   - dict{char : int}
   - dict{int : char}
   - dict{punctuation symbol : 'discription'}
+  
 - Preprocess data
   - lower case
   - split text into word list
   - tokenize words in text
+  
 - Batching into Dataloader
   - Inputs = [1,2,3,4,5] (eg. batch_size = 5)
   - target = [6]: the word after inputs
+  
 - RNN architecture
   - embeding layer (vocab_size --> embedding_dim)
   - LSTM layer (embedding_dim --> hidden_dim, n_layers)
